@@ -1,5 +1,6 @@
 package net.emi.emissillymod;
 
+import net.emi.emissillymod.block.ModBlocks;
 import net.emi.emissillymod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -30,6 +31,7 @@ public class EmisSillyMod {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -43,6 +45,10 @@ public class EmisSillyMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.WITHERED_POWDER);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.DEATHS_TOUCH);
         }
     }
 
