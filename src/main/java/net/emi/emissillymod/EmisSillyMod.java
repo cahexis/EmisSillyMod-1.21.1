@@ -1,6 +1,7 @@
 package net.emi.emissillymod;
 
 import net.emi.emissillymod.block.ModBlocks;
+import net.emi.emissillymod.effect.ModEffects;
 import net.emi.emissillymod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -32,6 +33,7 @@ public class EmisSillyMod {
         NeoForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

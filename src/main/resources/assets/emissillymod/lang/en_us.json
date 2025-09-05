@@ -1,4 +1,5 @@
 {
   "item.emissillymod.withered_powder": "Withered Powder",
-  "block.emissillymod.deaths_touch": "Deaths Touch"
+  "block.emissillymod.deaths_touch": "Deaths Touch",
+  "effect.emissillymod.death_clock": "Death Clock"
 }
