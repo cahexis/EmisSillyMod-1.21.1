@@ -1,0 +1,8 @@
+{
+
+  "message_id": "death_touch_effect",
+  "scaling": "never",
+  "exhaustion": 0.1,
+  "effects": "hurt",
+  "death_message_type": "default"
+}
