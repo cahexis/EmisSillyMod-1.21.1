@@ -2,6 +2,7 @@ package net.emi.emissillymod.effect.custom;
 
 import net.emi.emissillymod.effect.ModEffects;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,7 +19,6 @@ public class DeathClockEffect extends MobEffect  {
     @Override
     public boolean applyEffectTick(LivingEntity entity, int amplifier) {
         //scary hearts maybe
-
         return true;
     }
 

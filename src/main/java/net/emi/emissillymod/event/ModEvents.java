@@ -18,7 +18,7 @@ public class ModEvents {
     public static void EffectExpired(MobEffectEvent.Expired event) {
 
         if (event.getEntity() instanceof ServerPlayer player && event.getEffectInstance().is(ModEffects.DEATH_CLOCK_EFFECT)) {
-            player.hurt(player.damageSources().drown(), 20);
+            player.hurt(player.damageSources().wither(), 20);
         }
     }
 }
